@@ -1,0 +1,225 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	
+	background-color: #FFE4F1;
+	color: white;
+}
+
+.logo
+{
+	margin-top: -12px;
+}
+
+.navMain
+{
+	width: 100%;
+	height: 80px;
+	background-color: #622350;
+}
+
+.menu
+{
+	font-family: Now;
+	float: right;
+	margin-right: 15px;
+}
+
+.menu a
+{
+	display: inline-block;
+	text-decoration: none;
+	color: white;
+	line-height: 20px;
+	margin: 30px 2px;
+	text-transform: uppercase;
+	font-size: 12px;
+	padding: 3px 10px;
+	border-radius: 20px;
+}
+
+a.active,a:hover
+{
+   background-color: #4B1D3D;
+	color: #B3699E;
+	transition: 0.8s;
+}
+
+.mbar
+{
+	float: right;
+	font-size: 25px;
+	color: white;
+	padding: 20px 20px 0 0;
+	display: none;
+}
+
+#toggle
+{
+	float: right;
+	padding: 20px;
+	display: none;
+}
+
+@media only screen and (max-width: 1150px)
+{
+	.mbar
+	{
+		display: block;
+		cursor: pointer;
+	}
+
+	.menu
+	{
+		display: block;
+		text-align: center;
+		width: 100%;
+		
+	}
+}
+
+
+#FACmainbody
+{
+		font-family: Arial;
+}
+
+h1
+{
+	padding-top:60px;
+	font-size: 27px;
+	text-align: center;
+	text-transform: uppercase;
+	color: #622350;
+}
+
+
+
+.descriptionFAC
+{
+	text-align: center;
+	padding-top: 45px;
+	color: #622350;
+	
+	font-size: 16px;
+}
+
+h3
+{
+	text-align: center;
+	padding-top: 45px;
+	color: #622350;
+}
+
+
+.container
+{
+	width: 1280px;
+	
+	margin: 50px auto 0;
+	display:  flex;
+	padding-left: 100px; 
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.container .box
+{
+	position: relative;
+	width: 350px;
+	height: 263px;
+	background: #F5EFF5;
+	margin: 5px;
+}
+
+.container .box .imgBox
+{
+	position: relative;
+	overflow: hidden;
+}
+
+.container .box .imgBox img
+{
+	max-width: 100%;
+	max-height: 100%;
+	transition: transform 2s;
+}
+
+.container .box:hover .imgBox img
+{
+	transform: scale(1.2);
+}
+
+.container .box .details
+{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	background: rgba(84, 44, 62, 0.19);
+}
+
+.container .box .details .content
+{
+	position: absolute;
+	top: 50%
+	transform:translateY(-50%);
+	text-align: center;
+	padding-left:130px;
+	color: #1E032B
+
+
+
+}
+
+.descriptionFAC1
+{
+	text-align: center;
+	padding-top: 45px;
+	color: #622350;
+	
+	font-size: 19px;
+}
+
+.descriptionFAC2
+{
+	text-align: center;
+	padding-top: 45px;
+	color: #622350;
+	
+	font-size: 19px;
+}
+
+.descriptionFAC3
+{
+  text-align: center;
+	padding-top: 45px;
+	color: #622350;
+	
+	font-size: 30px;
+}	
+
+
+.descriptionFAC4
+{
+	text-align: center;
+	padding-top: 45px;
+	color: #622350;
+	
+	font-size: 19px;
+}
+
+.site-footer
+{
+	background-color: #622350;
+	padding: 45px 0 20px;
+	color: #737373
+	line-height:26px;
+}
