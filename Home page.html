@@ -3,8 +3,9 @@
 <html>
 	  <head>
 
-	  	    <title>HOTEL FLAMINGO</title>
+	  	    <title>Lavista Hotels Sri Lanka</title>
 	  	    <link rel="stylesheet" type="text/css" href="Home page.css">
+          <link rel="shortcut icon" type="image/png" href="icon-hotel.png">
 	  	    <meta charset="utf-8">
 	  	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	  	    
@@ -16,14 +17,14 @@
 	  	    <header>
 	  	    	<!-- nav bar and logo -->
 	  	    	    <nav class="navMain">
-	  	    	    	<img src="Gallery/HF.PNG"  width="250px" height="100px" class="logo" alt="hlogo"> 
+	  	    	    	<a href="Home page.html"><img src="hotel-logo.png"  width="250px" height="100px" class="logo" alt="hlogo"></a> 
 
 	  	    	    	<label for="toggle" class="mbar">&#9776;</label>
 	  	    	    	<input type="checkbox" id="toggle"/>
 	  	  
 	  	    	    	<div class="menu">
-	  	    	    		<a class="active" href="#">Home</a>
-	  	    	    		<a href="About.html">About Us</a>
+	  	    	    		<a class="active" href="Home page.html">Home</a>
+	  	    	    		<a href="Facilities.html">Facilities</a>
 	  	    	    		<a href="#">Accomadation</a>
 	  	    	    		<a href="#">Hotel Reservation</a>
 	  	    	    		<a href="#">Registration</a>
@@ -31,9 +32,73 @@
 	  	    	    	</div>		 	    	    	
 	  	    	    </nav>
 	  	    </header>
+           
+            <div class="slideshow-container">
+                   <div class="mySlides fade">
+                   	     <img src="slide1.jpg" style="width: 1263px"> 	     
+                   </div>
+                   <div class="mySlides fade">
+                   	     <img src="slide2.jpg" style="width: 1263px"> 	     
+                   </div>
+                   <div class="mySlides fade">
+                   	     <img src="slide3.jpg" style="width: 1263px"> 	     
+                   </div>
+                   <div class="mySlides fade">
+                   	     <img src="slide4.jpg" style="width: 1263px"> 	     
+                   </div>
+                   <div class="mySlides fade">
+                   	     <img src="slide5.jpg" style="width: 1263px"> 	     
+                   </div>
+                   <div class="mySlides fade">
+                   	     <img src="slide6.jpg" style="width: 1263px"> 	     
+                   </div>
+                   <div class="mySlides fade">
+                   	     <img src="slide7.jpg" style="width: 1263px"> 	     
+                   </div>
+            </div>
+        
+           <!-- slideshow script --> 
+            <script>
+                 var slideIndex = 0;
+                 showSlides();
+
+                 function showSlides() {
+                 var i;
+                 var slides = document.getElementsByClassName("mySlides");
+                 for (i = 0; i < slides.length; i++) {
+                 slides[i].style.display = "none";
+                 }
+                 slideIndex++;
+                 if (slideIndex > slides.length) {slideIndex = 1}
+                 slides[slideIndex-1].style.display = "block";
+                 setTimeout(showSlides, 5000); // Change image every 5 seconds
+                 }
+            </script>
+
+            <div id="introduction">
+
+              <div id="headings">
+              <h1 id="head-mid">LAViSTA HOTELS</h1>
+              <h2 id="subhead-mid">sri lanka</h2>
+              </div>
+              
+              <p id="intro1">Revel in our histories. Chase our mysteries. Discover extraordinary places. Unwind in our spaces. At Lavista Hotels, we promise you are in good hands. With the largest family of hotels and villas across Sri Lanka, we are delighted to welcome you into our homes found on the mountains to the coastline.</p> 
+
+              <p id="intro2">Our legendary hospitality is one that we are truly proud of, and will forever remain synonymous with our name - wherever you may cross paths with us on your travels far and wide.</p>
+
+              <p id="intro3">Our spaces have also been designed to seamlessly blend the finest of Sri Lankan hospitality with the nature of our surroundings, creating atmospheres of undiscovered luxury that you will find hard to match. With rooms that draw you into a world of their own, and signature dining experiences that transport you to a world beyond, your stay with us is a stay to remember. No matter how long you choose to spend with our family, we will always welcome you with open arms and a tropical embrace to make you feel at home.</p>
+
+              <center><a href="About.html" id="about">About Us</a></center>
 
 
-	  	    
+          </div>
+
+          <div class="about-destinations">
+            <p id="destination-tag">Destinations - 9</p>
+
+            <p id="description">We are a small island with big hearts. Wherever you may find yourself in Sri Lanka, rest easy knowing that an open door is never too far away.</p>
+          </div>
+	  	      <div class="footer">Footer</div>
 	  </body>
 </html>
 
