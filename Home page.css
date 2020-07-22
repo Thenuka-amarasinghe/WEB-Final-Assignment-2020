@@ -16,9 +16,7 @@ body
 {
 	background-color: #ffffff;
 	height: 80px;
-	width: 100%;
-
-	
+	width: 100%;	
 }
 
 .logo
@@ -30,8 +28,6 @@ body
 {
 	float: right;
 	margin-right: 15px;
-
-
 }
 
 .menu a /*to change the style & display order*/
