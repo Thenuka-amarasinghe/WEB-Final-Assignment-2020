@@ -66,7 +66,7 @@ body
 	margin-right: 15px;
 }
 
-.menu a/*to change the style & display order*/
+.menu a, select/*to change the style & display order*/
 {
 	display: inline-block;
 	line-height: 25px;
@@ -95,21 +95,12 @@ a.active,.menu a:hover  /* animation of the nav bar elements*/
 	display: none;
 }
 
-.dropdown {
-    display: inline-flex;
-    
+#HotelTab
+{
+	display: none;
 }
-.dropdown-content{
-    display: none;
-    float: none;
-    position: absolute;
-    float: none;
-    top: 5%;
-    
-}
-.dropdown:hover .dropdown-content{
-    display: inline-block;
-}
+
+
 .vid
 {
     filter: opacity(70%);

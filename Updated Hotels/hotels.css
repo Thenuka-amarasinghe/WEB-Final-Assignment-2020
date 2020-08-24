@@ -1,0 +1,216 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+
+}
+
+body
+{ 
+	margin: 0;
+	font-family: Now;
+}
+.navMain
+{
+	background-color: #ffffff;
+	height: 80px;
+    width: 100%;
+    position: relative;	
+}
+
+.logo
+{
+  margin: 3px 15px;
+}
+
+.menu /*to change the position of the nav bar list*/
+{
+	float: right;
+	margin-right: 65px;
+}
+
+.menu a /*to change the style & display order*/
+{
+	display: inline-block;
+	line-height: 25px;
+	margin: 20px 2px;
+	color: #B3699E;
+	font-size: 12px;
+	text-transform: uppercase;
+	padding:2px 10px;
+	border-radius: 20px;
+	text-decoration: none;
+	
+}
+
+a.active,.menu a:hover /* animation of the nav bar elements*/
+{
+	background-color: #4B1D3D;
+	color: #B3699E;
+	transition: .6s;
+}
+
+.mbar
+{
+	font-size: 25px;
+	color: white;
+	padding: 20px 20px 0 0;
+	float: right;
+	display: none;
+}
+
+.dropbtn
+{
+  
+  color: #B3699E;
+  padding: 12px;
+  font-size: 12px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.dropD
+{
+  position: relative;
+  display: inline-block;
+}
+
+.dropList
+{
+  display: none;
+  position: absolute;
+  min-width: 135px;
+
+}
+
+.dropList a 
+{
+  margin: 0;
+  color: #B3699E;
+  border-color: #B3699E;
+  background-color: #D19FAD;
+  padding: 3px 12px;
+  text-decoration: none;
+  display: block;
+ 
+}
+
+.dropList a:hover {background-color: #4B1D3D;}
+
+.dropD:hover .dropList 
+{
+  display: block;
+}
+
+.dropD:hover .dropbtn
+{
+  background-color: #4B1D3D;
+}
+
+.desc {
+    
+    font-size: 35px;
+    text-align: center;
+    text-indent: 2px;
+    padding: 150px;
+    margin: 20px;
+    background-image: url("bg-wall-mid.jpg");
+    background-size: 100%;
+    
+}
+.gallery img {
+    border-radius: 8px;   
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: #4B1D3D 10px solid;
+    border-right: #4B1D3D 10px solid;
+    padding-right: 100px;
+    padding-left: 100px;
+    background-color: pink;
+}
+body 
+{
+    font-family: 'century gothic';
+    
+}
+.contact a{
+    font-size: 40px;
+    display: inline-block;
+    text-decoration: none;
+    clear: both;
+    text-align: center;
+    color: #B3699E;
+    
+}
+.contact a:hover{
+    color: black;
+}
+.contact {
+    position: fixed;;
+    bottom: 0;
+    right: 0;
+    width: auto;
+    left: 1;
+    bottom: 0;
+    padding: 10px;
+}
+#fac
+{
+    text-align: center;
+    font-size: 50px; 
+}
+.facilities
+{
+    padding-bottom: 5%;
+    text-align: center;
+    background-image: linear-gradient(to right,white, pink, white); 
+}
+
+.facilities span
+{
+    font-size:25px;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.facilities a
+{
+    text-decoration: none;
+    color:black;
+}
+.facilities a:hover
+{   
+    
+    background-color: rgba(153, 0, 115,0.3);
+    padding : 50px 18px;
+
+}
+.fest img 
+{
+    width:40%;
+    position: absolute;
+    left: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+.fest div 
+{
+    border-left:4px solid black;
+    font-size: 30px;
+    float: right;
+    text-align: center;
+    padding: 10% 1% 10% 1%;
+    margin:1% 6% 5% 55%;
+    background-image: linear-gradient(to top, white,pink, white);
+}
+.vid
+{
+    margin-top: 8%;
+}
+

@@ -7,10 +7,7 @@
 	  	    <link rel="stylesheet" type="text/css" href="Home page.css">
           <link rel="shortcut icon" type="image/png" href="icon-hotel.png">
 	  	    <meta charset="utf-8">
-	  	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	  	    
-	  	    
-
+	  	    <meta name="viewport" content="width=device-width, initial-scale=1">
 	  </head>
 
 	  <body>
@@ -26,12 +23,22 @@
 	  	    	    		<a class="active" href="Home page.html">Home</a>
 	  	    	    		<a href="Facilities.html">Facilities</a>
 	  	    	    		<a href="#">Accomadation</a>
+                     <div class="dropD">
+                    <a href="#" class="dropbtn">Hotels</a>
+                    <div class="dropList">
+                      <a href="#">Lavista Bay</a>
+                      <a href="#">Lavista Bloom</a>
+                      <a href="#">Lavista Red</a>
+                    </div>
+                  </div>              
 	  	    	    		<a href="#">Hotel Reservation</a>
 	  	    	    		<a href="#">Registration</a>
                     <a href="About.html">About Us</a>
-	  	    	    		<a href="#">Contact Us</a>    	    		
-	  	    	    	</div>		 	    	    	
+	  	    	    		<a href="#">Contact Us</a> 
+	  	    	    	</div>	
+
 	  	    	    </nav>
+                  
 	  	    </header>
            
             <div class="slideshow-container">
@@ -93,13 +100,97 @@
 
 
           </div>
-
+         
+         <div id="destinations-container">
+          <div class="destinations-background"></div>
           <div class="about-destinations">
-            <p id="destination-tag">Destinations - 9</p>
+            <p id="destination-tag">Destinations</p>
 
-            <p id="description">We are a small island with big hearts. Wherever you may find yourself in Sri Lanka, rest easy knowing that an open door is never too far away.</p>
+            <p id="description-destinations">We are a small island with big hearts. Wherever you may find yourself in Sri Lanka, rest easy knowing that an open door is never too far away.</p>
+             
+            <p id="hotelnames">LAViSTA RED - DOWN SOUTH<br>LAViSTA BLOOM - HILLSIDE<br>LAViSTA BAY - BENTHOTA<br>LAViSTA GREY - TROPICAL WOODS</p>
+
+            <a href="#" id="hotels">Discover LAViSTA Hotels</a>
+
           </div>
-	  	      <div class="footer">Footer</div>
+
+          <div class="hotel-image-grid">
+            <span><img src="lavista-south.jpg" width="395" height="560" id="left-image"></span>
+            <span><img src="lavista-hillside.jpg" width="360" height="560" id="mid-image"></span>
+            <span><img src="lavista-tropical.jpg" width="350" height="560" id="right-image"></span>
+          </div>
+        </div> 
+
+        <div id="facilities-description">
+              <h1>At Lavista Hotels</h1>
+        </div>
+
+        <div id="Facilities-container">
+                <div class="facilities-container">
+
+                      <div class="Slides fade">
+                      <img src="5.jpg" style="width:100%">
+                      <div class="text">Caption Text</div>
+                      </div>
+
+                      <div class="Slides fade">
+                      <img src="5.jpg" style="width:100%">
+                      <div class="text">Caption Two</div>
+                      </div>
+
+                      <div class="Slides fade">
+                      <img src="5.jpg" style="width:100%">
+                      <div class="text">Caption Three</div>
+                      </div>
+
+                      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                      </div>
+                      <br>
+
+                      <div style="text-align:center">
+                      <span class="dot" onclick="currentSlide(1)"></span> 
+                      <span class="dot" onclick="currentSlide(2)"></span> 
+                      <span class="dot" onclick="currentSlide(3)"></span> 
+                      </div>
+                      </div>
+        </div>
+
+              <script>
+                 var slideIndex = 1;
+                 showSlides(slideIndex);
+
+                 function plusSlides(n) {
+                 showSlides(slideIndex += n);
+                }
+
+                 function currentSlide(n) {
+                 showSlides(slideIndex = n);
+                }
+
+                function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("Slides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {slideIndex = 1}    
+                if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+</script>
+
+
+            <div id="events">
+              <h1>Want us to Host your Events?</h1>
+            </div>
+	  	      <div id="footer">Footer</div>
 	  </body>
 </html>
 
