@@ -62,7 +62,6 @@ a.active,.menu a:hover /* animation of the nav bar elements*/
 
 .dropbtn
 {
-  background-color: #4B1D3D;
   color: #B3699E;
   padding: 12px;
   font-size: 12px;
@@ -106,10 +105,6 @@ a.active,.menu a:hover /* animation of the nav bar elements*/
   display: block;
 }
 
-.dropD:hover .dropbtn
-{
-  background-color: #4B1D3D;
-}
 
 .desc {
     
@@ -160,57 +155,55 @@ body
     bottom: 0;
     padding: 10px;
 }
-#fac
-{
-    text-align: center;
-    font-size: 50px; 
-}
-.facilities
-{
-    padding-bottom: 5%;
-    text-align: center;
-    background-image: linear-gradient(to right,white, pink, white); 
-}
 
-.facilities span
-{
-    font-size:25px;
-    text-align: center;
-    padding: 0px 20px;
-}
 
-.facilities a
+body 
 {
-    text-decoration: none;
-    color:black;
+    font-family: 'century gothic';
+    background-image: url(about-wall.jpg);
+    
 }
-.facilities a:hover
-{   
-    transition: .6s;
-    background-color: rgba(153, 0, 115,0.3);
-    padding : 50px 18px;
-
-}
-.fest img 
+.forms
 {
+    margin-left: auto;
+    margin-right: auto;
     width:40%;
-    position: absolute;
-    left: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-left-radius: 10%;
+    background-color: rgba(153, 0, 115,0.3);
+    padding: 70px;
+    border: #4B1D3D, 2px, solid;
+    font-size: 20px;
 }
-.fest div 
+.forms input
 {
-    border-left:4px solid black;
-    font-size: 30px;
-    float: right;
+    font-size: 20px;
+    size: 40px;
+    border:none;
+}
+h2
+{
+    color: rgb(153, 0, 115);
     text-align: center;
-    padding: 10% 1% 10% 1%;
-    margin:1% 6% 5% 55%;
-    background-image: linear-gradient(to top, white,pink, white);
-}
-.vid
-{
-    margin-top: 8%;
+    font-size: 60px;
+    margin-bottom: 7px;
 }
 
+.sign 
+{
+    font-size: 15px;
+}
+#loginbtn
+{
+    padding: 10px;
+    background-color: seagreen;
+    color: seashell;
+    float: right;
+    margin-right: 60px;
+  
+}
+#signbtn
+{
+    padding: 6px;
+    background-color: gray;
+    border: black 1px solid;
+
+}
