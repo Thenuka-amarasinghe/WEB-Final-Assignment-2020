@@ -152,47 +152,37 @@ body
     background-image: url(about-wall.jpg);
     
 }
-.forms
+
+.formT 
 {
+    padding:50px;
+    margin:50px;
+    border: black 1px solid;
+    line-height: 45px;
+    background-image: linear-gradient(to right, rgba(255, 153, 255,0.5),rgba(255, 255, 255, 0.5),rgba(255, 153, 255,0.5));
     margin-left: auto;
     margin-right: auto;
-    width:40%;
-    background-color: rgba(153, 0, 115,0.3);
-    padding: 70px;
-    border: #4B1D3D, 2px, solid;
-    font-size: 20px;
 }
-.forms input
+.formT td
 {
-    font-size: 20px;
-    size: 40px;
-    border:none;
-}
-h2
-{
-    color: rgb(153, 0, 115);
-    text-align: center;
-    font-size: 60px;
-    margin-bottom: 7px;
+  padding: 10px;
 }
 
-.sign 
+.formT input, .formT select
 {
-    font-size: 15px;
+  font-size: 15px;
 }
-#loginbtn
+#bookbtn
 {
     padding: 10px;
     background-color: seagreen;
     color: seashell;
     float: right;
     margin-right: 60px;
-  
 }
-#signbtn
+#cptform
 {
-    padding: 6px;
-    background-color: gray;
-    border: black 1px solid;
+  color: #4B1D3D;
+  font-size: 30px;
 
 }
